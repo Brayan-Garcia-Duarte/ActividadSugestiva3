@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* General */
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+main header {
+    background-color: #fff;
+    height: 100%;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main header .logo {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+main header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+main header nav a {
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+main header nav a:hover {
+    color: #005cb8;
+}
+
+main header nav a.active {
+    color: #003870;
+}
+
+main .contenedor {
+    width: 80%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+main .contenedor::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de scroll en navegadores basados en WebKit (Chrome, Safari) */
+}
+
+.section {
+    display: none;
+    background-color: #f2f2f2;
+}
+
+.active {
+    display: block;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(230, 100, 101, 0.6),
+            rgb(145, 152, 229, 0.6)),
+        url("https://internetdelascosas.xyz/corporativo/gif-2-sola-exp-1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    color: #005cb8;
+    text-align: center;
+    font-size: 45px;
+}
+
+#concepto .container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#concepto .container p {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#concepto .container .tarjetasContianer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#concepto .container .tarjetasContianer .filas {
+    display: flex;
+    gap: 10px;
+}
+
+#concepto .container .tarjetasContianer .filas .box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(rgba(230, 100, 101, 0.6),
+            rgb(145, 152, 229, 0.6)),
+        url("https://i.gifer.com/Ekwj.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#concepto .container .tarjetasContianer .filas .box img {
+    width: 100px;
+    height: 100px;
+}
+
+#concepto .container .tarjetasContianer .filas .box p {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#aplicacion .container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#aplicacion .container p {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#aplicacion .container .galeriaContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#aplicacion .container .galeriaContainer .galeria {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#aplicacion .container .galeriaContainer .galeria .card {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: inline-block;
+}
+
+#aplicacion .container .galeriaContainer .galeria .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#aplicacion .container .galeriaContainer .galeria .card .desc {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aplicacion .container .galeriaContainer .galeria .card .desc p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#futuro .container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#futuro .container p {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#futuro .container .grid__container {
+    width: 100%;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 25px;
+}
+
+#futuro .container .grid__container .grid__items {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#futuro .container .grid__container .grid__items:nth-child(1) {
+    background: url(../img/Evi1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(2) {
+    background: url(../img/Evi2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(3) {
+    background: url(../img/Evi3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(4) {
+    background: url(../img/Evi4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(5) {
+    background: url(../img/Evi5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(6) {
+    background: url(../img/Evi6.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(7) {
+    background: url(../img/Evi7.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(8) {
+    background: url(../img/Evi8.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(9) {
+    background: url(../img/Evi9.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futuro .container .grid__container .grid__items:nth-child(10) {
+    background: url(../img/Evi10.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 850px) {
+    .ancho {
+        grid-column: span 2;
+    }
+
+    .largo {
+        grid-row: span 2;
+    }
+}
+
+#alumno .container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#alumno .container p {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#alumno .container .portada {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        url("https://images.ctfassets.net/5i1m3im8l2b5/2g17zgCFVcG2WdFZ5quItK/8c62eaa94bbf18d19a2a441dc32ae58e/What_is_IoT.jpg?w=1200&h=630&fl=progressive&q=50&fm=jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#alumno .container .portada .universidad h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#alumno .container .portada .maestria h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
