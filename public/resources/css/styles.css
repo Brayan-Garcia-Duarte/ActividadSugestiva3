@@ -108,7 +108,7 @@ main .contenedor::-webkit-scrollbar {
 }
 
 .header h1 {
-    color: #005cb8;
+    color: #fff;
     text-align: center;
     font-size: 45px;
 }
